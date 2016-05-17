@@ -585,7 +585,7 @@
     <thead>
       <tr>
         <th class="rpt-text">Expense Type</th>
-        <th class="rpt-text">Vendor Name</th>
+        <th class="rpt-text"></th>
         <th class="rpt-currency">Expense Amount</th>				
 
       </tr>
@@ -597,12 +597,7 @@
 {{#filter FX5__Ticket_Items__r "RecordType.DeveloperName" is="BillableExpense"}}
 {{#group items "Expense_Type_Formula__c"}}
 {{#each items}}
-  <tr>
-    <td class="rpt-text">{{Expense_Type_Formula__c}}</td>
-    <td class="rpt-text">{{Vendor_Name_for_Time_Sheet__c}}</td>
-    <td class="rpt-currency">{{formatCurrency Expense_Amount__c symbol="$" precision="2" separator="," decimal="."}}</td>
 
-  </tr>
 {{/each}}
   <tr class="rpt-data-footer rpt-total">
     <th></th>
