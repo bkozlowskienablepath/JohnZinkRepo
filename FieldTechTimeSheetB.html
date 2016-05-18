@@ -585,7 +585,11 @@
     <thead>
       <tr>
         <th class="rpt-text">Expense Type</th>
-        <th class="rpt-currency">Expense Amount</th>				
+        <th class="rpt-currency">Expense Amount</th>		
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>		
       </tr>
     </thead>
     <tbody>
@@ -600,11 +604,19 @@
   <tr class="rpt-data-footer rpt-total">
     <th>{{Expense_Type_Formula__c}} Sub Total</th>
     <th>${{sum items "Expense_Amount__c"}}</th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
   </tr>
 {{/group}}
   <tr class="rpt-data-footer rpt-total">
     <th>Expense Total</th>
     <th>${{sum items "Expense_Amount__c"}}</th>
+    <th></th>
+     <th></th>
+     <th></th>
+     <th></th>
   </tr>
 {{/filter}}
 
