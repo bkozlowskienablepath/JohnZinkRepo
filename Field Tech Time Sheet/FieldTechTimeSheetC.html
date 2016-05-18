@@ -318,6 +318,13 @@
 	white-space: nowrap;
 }
 
+.auto-style32 {
+	border-bottom-style: none;
+	border-bottom-width: medium;
+	font-size: small;
+	font-weight: bold;
+}
+
 .auto-style33 {
 	border: 1px solid #000000;
 	font-family: Verdana;
@@ -425,7 +432,7 @@
                                 	
                                 		</tr>
                                 		<tr>
-                                		<td style="text-align:center" class="auto-style30">{{userProfile "FullName"}}</td>
+                                		<td style="text-align:center" class="auto-style32">{{userProfile "FullName"}}</td>
                                 		</tr>
                                 		
                                 		<tr>
@@ -630,10 +637,13 @@
 		</table>		
 
 
+<table>
     <thead>
       		<tr>
 			<th colspan="2" style="text-align:center">Expense</th>
 			</tr>
+        <th style="text-align:center" class="auto-style33">Expense Type</th>
+        <th style="text-align:center" class="auto-style33">Expense Amount</th>		
         <th></th>
         <th></th>
         <th></th>
@@ -649,12 +659,18 @@
 {{#each items}}
 
 {{/each}}
+  <tr>
+    <th style="text-align:center" class="auto-style26">{{Expense_Type_Formula__c}} Sub Total</th>
+    <th style="text-align:center" class="auto-style26">${{sum items "Expense_Amount__c"}}</th>
     <th></th>
     <th></th>
     <th></th>
     <th></th>
   </tr>
 {{/group}}
+  <tr>
+   <th>Expense Total</th>
+ <th style="text-align:right"> ${{sum items "Expense_Amount__c"}}</th>
     <th></th>
      <th></th>
      <th></th>
