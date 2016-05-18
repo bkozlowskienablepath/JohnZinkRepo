@@ -598,7 +598,7 @@
       		<tr>
 			<th colspan="2" style="text-align:center">Trip Expense</th>
 			</tr>
-        <th style="height:40px;width:100px;float:left;" class="auto-style33">Expense Type</th>
+        <th style="height:40px;width:150px;float:left;" class="auto-style33">Expense Type</th>
         <th style="height:40px;width:100px;float:left;" class="auto-style33">Expense Amount</th>		
         <th></th>
         <th></th>
@@ -616,7 +616,7 @@
 
 {{/each}}
   <tr>
-    <th style="height:30px;width:100px;float:left;" class="auto-style26">{{Expense_Type_Formula__c}} Sub Total</th>
+    <th style="height:30px;width:150px;float:left;" class="auto-style26">{{Expense_Type_Formula__c}} Sub Total</th>
     <th style="height:30px;width:100px;float:left;" class="auto-style26">${{sum items "Extended_Amount__c"}}</th>
 
   </tr>
@@ -636,8 +636,8 @@
 
 {{/each}}
   <tr>
-    <th style="height:30px;width:100px;float:left;" class="auto-style26">Cost: ${{sum items "Extended_Amount__c"}}</br> Markup: ${{sum items "Markup__c"}}</th>
-    <th style="height:30px;width:100px;float:left;" class="auto-style26">Number of Miles: {{sum items "FX5__Input_Qty__c"}}</th>
+    <th style="height:80px;width:150px;float:left;" class="auto-style26">Cost: ${{sum items "Extended_Amount__c"}}</br> Markup: ${{sum items "Markup__c"}}</th>
+    <th style="height:80px;width:100px;float:left;" class="auto-style26">Number of Miles: {{sum items "FX5__Input_Qty__c"}}</th>
 
   </tr>
 {{/group}}
