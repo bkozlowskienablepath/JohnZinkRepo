@@ -581,9 +581,60 @@
 			
 			</tr></tbody></table>
 
+
+
+ 
+<table>
+		
+			<tr>
+			
+				<th colspan="6" style="text-align:center">Labor</th>
+			
+			</tr>
+			
+			<tr>
+			
+				<th style="text-align:center" class="auto-style33">Date</th>
+				<th style="text-align:center" class="auto-style33">Start Time</th>
+				<th style="text-align:center" class="auto-style33">Stop Time</th>
+				<th style="text-align:center" class="auto-style33">Time Attributes (OT, Non Rev, Warrenty)</th>
+				<th style="text-align:center" class="auto-style33">Descripton of Work Peformed</th>
+				<th style="text-align:center" class="auto-style33">Duration</th>
+			
+			</tr>
+{{#filter FX5__Ticket_Items__r "RecordType.DeveloperName" is="Labor"}}
+{{#each items}}    
+			<tr>
+			
+				<td class="auto-style26">{{formatDateTime Start_Time__c format="MMMM Do YYYY"}} </td>
+				<td class="auto-style26">{{formatDateTime Start_Time__c format="h:mm A"}}</td>
+				<td class="auto-style26">{{formatDateTime Stop_Time__c format="h:mm A"}}</td>
+				<td class="auto-style26">{{Category__c}} - {{Day_of_Week__c}} ({{Was_this_time_Manual_OT__c}},{{Was_this_time_Non_Rev__c}},{{Was_this_time_Warranty_Hours__c}})</td>
+				<td class="auto-style26">{{Description_of_Work_Performed__c}}</td>
+				<td class="auto-style26">{{Duration__c}}</td>
+			
+			</tr>
+{{/each}}
+
+			<tr>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>				
+				<th>Total (Hours):</th>
+				<th style="text-align:right">{{sum items "Duration__c"}}</th>
+			
+			</tr>
+{{/filter}}
+
+		</table>		
+
+
 <table class="rpt-data">
     <thead>
-      <tr>
+      		<tr>
+			<th colspan="2" style="text-align:center">Expense</th>
+			</tr>
         <th class="rpt-text">Expense Type</th>
         <th class="rpt-currency">Expense Amount</th>		
         <th></th>
@@ -620,8 +671,75 @@
   </tr>
 {{/filter}}
 
- 
+		</table>
+		
+		<table>
+		
+			<tr>
+			
+				<th colspan="2" style="text-align:center">Parts Used</th>
+			
+			</tr>
+			
+			<tr>
+			
+				<th style="text-align:center; border-bottom : 1px solid #000000" class="auto-style33">Description</th>
+				<th style="text-align:center; border-bottom : 1px solid #000000" class="auto-style33">Amount</th>
+			
+			</tr>
+{{#filter FX5__Ticket_Items__r "RecordType.DeveloperName" is="Supplies"}}
+{{#each items}}
+			<tr>
+			
+				<td class="auto-style26">{{FX5__Description__c}}</td>
+				<td style="text-align:right; border-bottom : 1px solid #000000" class="auto-style26">{{formatCurrency Extended_Amount__c symbol="$" precision="2" seperator="," decimal="." }}</td>
+			
+			</tr>
+{{/each}}
 
+			<tr>
+			
+				<th></th>
+				<th style="text-align:right">Supplies Total: ${{sum items "Extended_Amount__c"}}</th>
+			
+			</tr>
+{{/filter}}
+
+		</table>
+		
+		<table>
+		
+			<tr>
+			
+				<th colspan="2" style="text-align:center">Equipment Used</th>
+			
+			</tr>
+			
+			<tr>
+			
+				<th style="text-align:center" class="auto-style33">Description</th>
+				<th style="text-align:center" class="auto-style33">Amount</th>
+			
+			</tr>
+{{#filter FX5__Ticket_Items__r "RecordType.DeveloperName" is="Equipment"}}
+{{#each items}}
+			<tr>
+			
+				<td class="auto-style26">{{FX5__Description__c}}</td>
+				<td style="text-align:right" class="auto-style26">{{formatCurrency Extended_Amount__c symbol="$" precision="2" seperator="," decimal="." }}</td>
+			
+			</tr>
+{{/each}}
+
+			<tr>
+			
+				<th></th>
+				<th style="text-align:right">Equipment Total: ${{sum items "Extended_Amount__c"}}</th>
+			
+			</tr>
+{{/filter}}
+
+		</table>
 
 		
 		
