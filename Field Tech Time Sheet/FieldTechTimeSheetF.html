@@ -598,8 +598,8 @@
       		<tr>
 			<th colspan="2" style="text-align:left">Trip Expense</th>
 			</tr>
-        <th style="height:20px;width:150px;float:left;" class="auto-style33">Expense Type</th>
-        <th style="height:20px;width:100px;float:left;" class="auto-style33">Expense Amount</th>		
+        <th style="height:30px;width:150px;float:left;" class="auto-style33">Expense Type</th>
+        <th style="height:30px;width:100px;float:left;" class="auto-style33">Expense Amount</th>		
       </tr>
     </thead>
     <tbody>
@@ -618,6 +618,7 @@
   </tr>
 {{/group}}
   <tr>
+   <th style="height:15px;width:100px;float:right;">Expense Total:</th>
  <th style="height:15px;width:100px;float:left;">Expense Total: ${{sum items "Extended_Amount__c"}}</th>
 
 
@@ -637,7 +638,8 @@
   </tr>
 {{/group}}
   <tr>
- <th style="height:35px;width:100px;float:left;"> Mileage Total: ${{sum items "Extended_Amount__c"}}</th>
+ <th style="height:35px;width:100px;float:right;">Mileage Total:</th>
+ <th style="height:15px;width:100px;float:left;" class="auto-style26">${{sum items "Extended_Amount__c"}}</th>
 
   </tr>
 {{/filter}}
