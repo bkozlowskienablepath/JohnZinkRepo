@@ -685,16 +685,15 @@
 
 {{/each}}
   <tr>
-    <th style="text-align:center" class="auto-style26">{{Expense_Type_Formula__c}} Sub Total</th>
-    <th style="text-align:center" class="auto-style26">${{sum items "Extended_Amount__c"}}</th>
-    <th></th>
+    <th style="text-align:center" class="auto-style26">Cost: ${{sum items "FX5__Price__c"}}</br> Markup: ${{sum items "Markup__c"}}</th>
+    <th style="text-align:center" class="auto-style26">Number of Miles: {{sum items "FX5__Input_Qty__c"}}</th>
     <th></th>
     <th></th>
     <th></th>
   </tr>
 {{/group}}
   <tr>
-   <th>Expense Total</th>
+   <th>Mileage Total</th>
  <th style="text-align:right"> ${{sum items "Extended_Amount__c"}}</th>
     <th></th>
      <th></th>
