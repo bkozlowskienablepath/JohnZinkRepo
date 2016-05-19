@@ -1,0 +1,26 @@
+window.FX_Mobile_Rules = {
+ 	'validationRules' : {
+		'Expense_Line_Item__c' : {
+			'ExpenseLineItem1' : {
+				'fullName' : 'ExpenseLineItem1',
+				'errorConditionFormula' : 'Type__c = "Meals" && ISBLANK(Comments__c)',
+				'errorDisplayField' : 'Comments__c',
+				'errorMessage' : 'You must provide comments as the expense is not billable'
+				},
+				'ExpenseLineItem2' : {
+				'fullName' : 'ExpenseLineItem2',
+				'errorConditionFormula' : 'Vendor__r.Name = "Other" && ISBLANK(Other_Vendor__c)',
+				'errorDisplayField' : 'Other_Vendor__c',
+				'errorMessage' : 'You must provide the name of the Vendor as the selected vendor is Other'
+				}
+			}
+		'FX5__Ticket_Item__c' : {
+			'TicketItem1' : {
+				'fullName' : 'TicketItem1',
+				'errorConditionFormula' : 'Category__c = "Weekend Day - OT" && Day_of_Week__c = "Saturday"',
+				'errorDisplayField' : 'Category__c',
+				'errorMessage' : 'You must select a weekend category'
+				},
+			}
+		}
+	}
