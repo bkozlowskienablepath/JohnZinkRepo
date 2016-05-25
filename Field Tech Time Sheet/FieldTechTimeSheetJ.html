@@ -307,6 +307,11 @@
 	border: 1px solid #000000;
 }
 
+.auto-style98 {
+	border-bottom-style: none;
+	border-bottom-width: medium;
+	font-size: x-small;
+}
 .auto-style99 {
 	border: 1px solid #000000;
 	justify-content: mi
@@ -601,7 +606,7 @@
       		<tr>
 			<th colspan="12" style="text-align:center">Labor</th>
 			</tr>
-        <th style="height:30px;width:40px;float:left;" class="auto-style33">Date</th>
+        <th style="height:30px;width:80px;float:left;" class="auto-style33">Date</th>
         <th style="height:30px;width:60px;float:left;" class="auto-style33">Weekend</th>	
         <th style="height:30px;width:40px;float:left;" class="auto-style33">Time In</th>	
         <th style="height:30px;width:40px;float:left;" class="auto-style33">Time Out</th>		
@@ -625,7 +630,7 @@
 
 
   <tr>
-        <th style="height:20px;width:40px;float:left;" class="auto-style26">{{formatDateTime Start_Time__c format="MM/DD/YY"}}</th>
+        <th style="height:20px;width:80px;float:left;" class="auto-style26">{{formatDateTime Start_Time__c format="MM/DD/YY"}}</th>
         <th style="height:20px;width:60px;float:left;" class="auto-style26">{{Weekend__c}}</th>	
         <th style="height:20px;width:40px;float:left;" class="auto-style26">{{formatDateTime Start_Time__c format="HH:mm"}}</th>	
         <th style="height:20px;width:40px;float:left;" class="auto-style26">{{formatDateTime Start_Time__c format="HH:mm"}}</th>	
@@ -633,16 +638,16 @@
         <th style="height:20px;width:40px;float:left;" class="auto-style26"></th>		
         <th style="height:20px;width:40px;float:left;" class="auto-style26"></th>
         <th style="height:20px;width:40px;float:left;" class="auto-style26"></th>
-        <th style="height:20px;width:50px;float:left;" class="auto-style26"></th>
-        <th style="height:20px;width:60px;float:left;" class="auto-style26"></th>		
-        <th style="height:20px;width:40px;float:left;" class="auto-style26"></th>	
-        <th style="height:20px;width:240px;float:left;" class="auto-style26">{{Description_of_Work_Performed__c}}</th>		
+        <th style="height:20px;width:50px;float:left;" class="auto-style26">{{Duration_Non_Rev__c}}</th>
+        <th style="height:20px;width:60px;float:left;" class="auto-style26">{{Duration_Warranty_Hours__c}}</th>		
+        <th style="height:20px;width:40px;float:left;" class="auto-style26">{{Duration_Non_Rev__c}}</th>	
+        <th style="height:20px;width:240px;float:left;" class="auto-style98">{{Description_of_Work_Performed__c}}</th>		
       </tr>
 
   </tr>
 {{/each}}
   <tr>
-   		<th style="height:30px;width:234px;float:left;" class="auto-style26">Sub-Total Hours</th>
+   		<th style="height:30px;width:274px;float:left;" class="auto-style26">Sub-Total Hours</th>
         <th style="height:30px;width:40px;float:left;" class="auto-style26"></th>
         <th style="height:30px;width:40px;float:left;" class="auto-style26"></th>		
         <th style="height:30px;width:40px;float:left;" class="auto-style26"></th>
@@ -707,22 +712,22 @@
 
 {{/each}}
   <tr>
-    <th style="height:30px;width:150px;float:left;" class="auto-style26">Number of Miles: {{sum items "FX5__Input_Qty__c"}}</th>
-    <th style="height:30px;width:100px;float:left;" class="auto-style26">Price per Mile: $1.50</th>
+    <th style="height:30px;width:100px;float:left;" class="auto-style26">Number of Miles: {{sum items "FX5__Input_Qty__c"}}</th>
+    <th style="height:30px;width:75px;float:left;" class="auto-style26">Price per Mile: $1.50</th>
 
   </tr>
 {{/group}}
   <tr>
- <th style="height:15px;width:150px;float:left;" class="auto-style26">Mileage Total:</th>
- <th style="height:15px;width:100px;float:left;" class="auto-style26">${{sum items "Extended_Amount__c"}}</th>
+ <th style="height:15px;width:100px;float:left;" class="auto-style26">Mileage Total:</th>
+ <th style="height:15px;width:75px;float:left;" class="auto-style26">${{sum items "Extended_Amount__c"}}</th>
 
   </tr>
 {{/filter}}
 
 {{#filter FX5__Ticket_Items__r "RecordType.DeveloperName" is="BillableExpense"}}
   <tr>
- <th style="height:15px;width:150px;float:left;" class="auto-style26">Markup Total:</th>
- <th style="height:15px;width:100px;float:left;" class="auto-style26">${{sum items "Markup__c"}}</th>
+ <th style="height:15px;width:100px;float:left;" class="auto-style26">Markup Total:</th>
+ <th style="height:15px;width:75px;float:left;" class="auto-style26">${{sum items "Markup__c"}}</th>
 
   </tr>
 {{/filter}}
