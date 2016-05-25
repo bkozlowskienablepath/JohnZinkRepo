@@ -606,6 +606,15 @@
       		<tr>
 			<th colspan="12" style="text-align:center">Labor</th>
 			</tr>
+  </tr>
+        <th colspan="2" style="height:30px;width:158px;float:left;" class="auto-style33"></th>
+        <th colspan="2" style="height:30px;width:98px;float:left;" class="auto-style33">Time Interval</th>		
+        <th colspan="2" style="height:30px;width:98px;float:left;" class="auto-style33">Regular Time (Chargeable)</th>	
+        <th colspan="2" style="height:30px;width:98px;float:left;" class="auto-style33">Weekend (Chargeable)</th>	
+        <th colspan="4" style="height:30px;width:444px;float:left;" class="auto-style33"></th>	
+      </tr>
+
+  </tr>
         <th style="height:30px;width:80px;float:left;" class="auto-style33">Date</th>
         <th style="height:30px;width:60px;float:left;" class="auto-style33">Weekend</th>	
         <th style="height:30px;width:40px;float:left;" class="auto-style33">Time In</th>	
@@ -625,7 +634,6 @@
 {{#filter FX5__Ticket_Items__r "RecordType.DeveloperName" is="Labor"}}
 
 {{#each items}}
-
 
 
 
@@ -829,15 +837,16 @@
 
 
 {{#filter FX5__Ticket_Items__r "RecordType.DeveloperName" is="Labor"}}
-{{#group items "Expense_Type_Formula__c"}}
+{{#group items "Time_Type__c"}}
 {{#each items}}
 
-{{/each}}
+
   <tr>
-    <th style="height:15px;width:150px;float:left;" class="auto-style26">{{""}}</th>
+    <th style="height:15px;width:150px;float:left;" class="auto-style26">{{Time_Type__c}}</th>
     <th style="height:15px;width:100px;float:left;" class="auto-style26">${{sum items "Extended_Amount__c"}}</th>
 
   </tr>
+  {{/each}}
 {{/group}}
   <tr>
    <th style="height:15px;width:150px;float:left;" class="auto-style26">Grand Total:</th>
