@@ -594,6 +594,8 @@
 				<td colspan="4" class="auto-style40">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>{{TI_I_7_1__c}}</b></td>
 			
 <!--LABOR / TIME ITEMS-->
+
+
 <table align="right">
     <thead>
       		<tr>
@@ -615,14 +617,18 @@
     </thead>
     <tbody>
 
+{{#filter FX5__Ticket_Items__r "RecordType.DeveloperName" is="Labor"}}
+
+{{#each items}}
+
 
 
 
   <tr>
-        <th style="height:20px;width:40px;float:left;" class="auto-style26"></th>
-        <th style="height:20px;width:60px;float:left;" class="auto-style26"></th>	
-        <th style="height:20px;width:40px;float:left;" class="auto-style26">{{Start_Time__c}}</th>	
-        <th style="height:20px;width:40px;float:left;" class="auto-style26">{{Stop_Time__c}}</th>		
+        <th style="height:20px;width:40px;float:left;" class="auto-style26">{{formatDateTime Start_Time__c format="MM/DD/YY"}}</th>
+        <th style="height:20px;width:60px;float:left;" class="auto-style26">{{Weekend__c}}</th>	
+        <th style="height:20px;width:40px;float:left;" class="auto-style26">{{formatDateTime Start_Time__c format="HH:mm"}}</th>	
+        <th style="height:20px;width:40px;float:left;" class="auto-style26">{{formatDateTime Start_Time__c format="HH:mm"}}</th>	
         <th style="height:20px;width:40px;float:left;" class="auto-style26"></th>
         <th style="height:20px;width:40px;float:left;" class="auto-style26"></th>		
         <th style="height:20px;width:40px;float:left;" class="auto-style26"></th>
@@ -634,7 +640,7 @@
       </tr>
 
   </tr>
-
+{{/each}}
   <tr>
    		<th style="height:30px;width:234px;float:left;" class="auto-style26">Sub-Total Hours</th>
         <th style="height:30px;width:40px;float:left;" class="auto-style26"></th>
@@ -644,11 +650,12 @@
         <th style="height:30px;width:50px;float:left;" class="auto-style26"></th>
         <th style="height:30px;width:60px;float:left;" class="auto-style26"></th>		
         <th style="height:30px;width:40px;float:left;" class="auto-style26"></th>	
-        <th style="height:30px;width:240px;float:left;" class="auto-style26"></th>
+        <th style="height:30px;width:240px;float:left;" class="auto-style26">${{sum items "Extended_Amount__c"}}</th>
 
 
   </tr>
 </tbody>
+{{/filter}}
 </table>
 
 
@@ -666,8 +673,8 @@
       		<tr>
 			<th colspan="2" style="text-align:left">Trip Expense</th>
 			</tr>
-        <th style="height:30px;width:150px;float:left;" class="auto-style33">Expense Type</th>
-        <th style="height:30px;width:100px;float:left;" class="auto-style33">Expense Amount</th>		
+        <th style="height:30px;width:100px;float:left;" class="auto-style33">Expense Type</th>
+        <th style="height:30px;width:75px;float:left;" class="auto-style33">Expense Amount</th>		
       </tr>
     </thead>
     <tbody>
@@ -680,14 +687,14 @@
 
 {{/each}}
   <tr>
-    <th style="height:15px;width:150px;float:left;" class="auto-style26">{{Expense_Type_Formula__c}} Sub Total</th>
-    <th style="height:15px;width:100px;float:left;" class="auto-style26">${{sum items "Extended_Amount__c"}}</th>
+    <th style="height:15px;width:100px;float:left;" class="auto-style26">{{Expense_Type_Formula__c}} Sub Total</th>
+    <th style="height:15px;width:75px;float:left;" class="auto-style26">${{sum items "Extended_Amount__c"}}</th>
 
   </tr>
 {{/group}}
   <tr>
-   <th style="height:15px;width:150px;float:left;" class="auto-style26">Expense Total:</th>
- <th style="height:15px;width:100px;float:left;" class="auto-style26">${{sum items "Extended_Amount__c"}}</th>
+   <th style="height:15px;width:100px;float:left;" class="auto-style26">Expense Total:</th>
+ <th style="height:15px;width:75px;float:left;" class="auto-style26">${{sum items "Extended_Amount__c"}}</th>
 
 
   </tr>
@@ -746,7 +753,7 @@
 
 {{/each}}
   <tr>
-    <th style="height:15px;width:75px;float:left;" class="auto-style26">{{}}</th>
+    <th style="height:15px;width:75px;float:left;" class="auto-style26"></th>
     <th style="height:15px;width:50px;float:left;" class="auto-style26">${{"Extended_Amount__c"}}</th>
 
   </tr>
