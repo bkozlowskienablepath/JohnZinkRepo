@@ -717,9 +717,73 @@
 
   </tr>
 {{/filter}}
+</tbody>
+</table>
 
 
 
+
+
+<table align="right">
+    <thead>
+      		<tr>
+			<th colspan="2" style="text-align:left">Parts Used</th>
+			</tr>
+        <th style="height:30px;width:150px;float:left;" class="auto-style33">Descripton</th>
+        <th style="height:30px;width:100px;float:left;" class="auto-style33">Amount</th>		
+      </tr>
+    </thead>
+    <tbody>
+
+
+
+{{#filter FX5__Ticket_Items__r "RecordType.DeveloperName" is="BillableExpense"}}
+{{#group items "Expense_Type_Formula__c"}}
+{{#each items}}
+
+{{/each}}
+  <tr>
+    <th style="height:15px;width:150px;float:left;" class="auto-style26">{{Expense_Type_Formula__c}} Sub Total</th>
+    <th style="height:15px;width:100px;float:left;" class="auto-style26">${{sum items "Extended_Amount__c"}}</th>
+
+  </tr>
+{{/group}}
+  <tr>
+   <th style="height:15px;width:150px;float:left;" class="auto-style26">Sub Total:</th>
+ <th style="height:15px;width:100px;float:left;" class="auto-style26">${{sum items "Extended_Amount__c"}}</th>
+
+
+  </tr>
+{{/filter}}
+
+
+{{#filter FX5__Ticket_Items__r "RecordType.DeveloperName" is="BillableMileage"}}
+{{#group items "Expense_Type_Formula__c"}}
+{{#each items}}
+
+{{/each}}
+  <tr>
+    <th style="height:30px;width:150px;float:left;" class="auto-style26">Number of Miles: {{sum items "FX5__Input_Qty__c"}}</th>
+    <th style="height:30px;width:100px;float:left;" class="auto-style26">Price per Mile: $1.50</th>
+
+  </tr>
+{{/group}}
+  <tr>
+ <th style="height:15px;width:150px;float:left;" class="auto-style26">Mileage Total:</th>
+ <th style="height:15px;width:100px;float:left;" class="auto-style26">${{sum items "Extended_Amount__c"}}</th>
+
+  </tr>
+{{/filter}}
+
+{{#filter FX5__Ticket_Items__r "RecordType.DeveloperName" is="BillableExpense"}}
+  <tr>
+ <th style="height:15px;width:150px;float:left;" class="auto-style26">Markup Total:</th>
+ <th style="height:15px;width:100px;float:left;" class="auto-style26">${{sum items "Markup__c"}}</th>
+
+  </tr>
+{{/filter}}
+</tbody>
+</table>
 				<table>
 		
 			<tbody><tr>
