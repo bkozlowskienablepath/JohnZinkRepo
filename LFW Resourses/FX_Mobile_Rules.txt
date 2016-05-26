@@ -1,0 +1,423 @@
+window.FX_Mobile_Rules = {
+ 	'validationRules' : {
+		'Health_Inspection_Evaluation__c' : {
+			'HEValidation1' : {
+				'fullName' : 'HEValidation1',
+				'errorConditionFormula' : 'Coffee_pots_soda_machine_clean__c = "Out of Compliance" && ISBLANK(CoffeePotsComments__c)',
+				'errorDisplayField' : 'CoffeePotsComments__c',
+				'errorMessage' : 'You must provide comments because the result was Out of Compliance'
+				},
+			'HEValidation2' : {
+				'fullName' : 'HEValidation2',
+				'errorConditionFormula' : 'Inside_of_microwave_oven_is_clean__c = "Out of Compliance" && ISBLANK(MicrowaveComments__c)',
+				'errorDisplayField' : 'MicrowaveComments__c',
+				'errorMessage' : 'You must provide comments because the result was Out of Compliance'
+				},
+			'HEValidation3' : {
+				'fullName' : 'HEValidation3',
+				'errorConditionFormula' : 'Amanda_oven_is_clean__c = "Out of Compliance" && ISBLANK(AmandaOvenComments__c)',
+				'errorDisplayField' : 'AmandaOvenComments__c',
+				'errorMessage' : 'You must provide comments because the result was Out of Compliance'
+				},
+			'HEValidation4' : {
+				'fullName' : 'HEValidation4',
+				'errorConditionFormula' : 'Roller_grill_hot_holding_units_clean__c = "Out of Compliance" && ISBLANK(RollergrillComments__c)',
+				'errorDisplayField' : 'RollergrillComments__c',
+				'errorMessage' : 'You must provide comments because the result was Out of Compliance'
+				},
+			'HEValidation5' : {
+				'fullName' : 'HEValidation5',
+				'errorConditionFormula' : 'Air_intakes_on_deli_case_clear__c = "Out of Compliance" && ISBLANK(AirintakesComments__c)',
+				'errorDisplayField' : 'AirintakesComments__c',
+				'errorMessage' : 'You must provide comments because the result was Out of Compliance'
+				},
+			'HEValidation6' : {
+				'fullName' : 'HEValidation6',
+				'errorConditionFormula' : 'Employees_wearing_the_proper_PPE__c = "Out of Compliance" && ISBLANK(PPEComments__c)',
+				'errorDisplayField' : 'PPEComments__c',
+				'errorMessage' : 'You must provide comments because the result was Out of Compliance'
+				},
+			'HEValidation7' : {
+				'fullName' : 'HEValidation7',
+				'errorConditionFormula' : 'Check_food_prep_area__c = "Out of Compliance" && ISBLANK(FoodPrepAreaComments__c)',
+				'errorDisplayField' : 'FoodPrepAreaComments__c',
+				'errorMessage' : 'You must provide comments because the result was Out of Compliance'
+				},
+			'HEValidation8' : {
+				'fullName' : 'HEValidation8',
+				'errorConditionFormula' : 'Bi_metallic_thermometer_calibrated__c = "Out of Compliance" && ISBLANK(ThermometerComments__c)',
+				'errorDisplayField' : 'ThermometerComments__c',
+				'errorMessage' : 'You must provide comments because the result was Out of Compliance'
+				},
+			'HEValidation9' : {
+				'fullName' : 'HEValidation9',
+				'errorConditionFormula' : 'Check_hot_food_products_held__c = "Out of Compliance" && ISBLANK(HotFoodComments__c)',
+				'errorDisplayField' : 'HotFoodComments__c',
+				'errorMessage' : 'You must provide comments because the result was Out of Compliance'
+				},
+			'HEValidation10' : {
+				'fullName' : 'HEValidation10',
+				'errorConditionFormula' : 'FIFO_process_being_followed__c = "Out of Compliance" && ISBLANK(FIFOComments__c)',
+				'errorDisplayField' : 'FIFOComments__c',
+				'errorMessage' : 'You must provide comments because the result was Out of Compliance'
+				},
+			'HEValidation11' : {
+				'fullName' : 'HEValidation11',
+				'errorConditionFormula' : 'Coffee_and_powered_drinks__c = "Out of Compliance" && ISBLANK(PoweredDrinksComments__c)',
+				'errorDisplayField' : 'PoweredDrinksComments__c',
+				'errorMessage' : 'You must provide comments because the result was Out of Compliance'
+				},
+			'HEValidation12' : {
+				'fullName' : 'HEValidation12',
+				'errorConditionFormula' : 'Check_hand_washing_sinks__c = "Out of Compliance" && ISBLANK(SinksComments__c)',
+				'errorDisplayField' : 'SinksComments__c',
+				'errorMessage' : 'You must provide comments because the result was Out of Compliance'
+				},
+			'HEValidation13' : {
+				'fullName' : 'HEValidation13',
+				'errorConditionFormula' : 'Verify_test_strips__c = "Out of Compliance" && ISBLANK(TestStripsComments__c)',
+				'errorDisplayField' : 'TestStripsComments__c',
+				'errorMessage' : 'You must provide comments because the result was Out of Compliance'
+				},
+			'HEValidation14' : {
+				'fullName' : 'HEValidation14',
+				'errorConditionFormula' : 'Cooking_utensils_stored_in_dry_location__c = "Out of Compliance" && ISBLANK(UtensilsComments__c)',
+				'errorDisplayField' : 'UtensilsComments__c',
+				'errorMessage' : 'You must provide comments because the result was Out of Compliance'
+				},
+			'HEValidation15' : {
+				'fullName' : 'HEValidation15',
+				'errorConditionFormula' : 'Sponges_not_used_on_site_for_food_prep__c = "Out of Compliance" && ISBLANK(SpongesComments__c)',
+				'errorDisplayField' : 'SpongesComments__c',
+				'errorMessage' : 'You must provide comments because the result was Out of Compliance'
+				},
+			'HEValidation16' : {
+				'fullName' : 'HEValidation16',
+				'errorConditionFormula' : 'Health_Food_service_permit__c = "Out of Compliance" && ISBLANK(PermitsComments__c)',
+				'errorDisplayField' : 'PermitsComments__c',
+				'errorMessage' : 'You must provide comments because the result was Out of Compliance'
+				},
+			'HEValidation17' : {
+				'fullName' : 'HEValidation17',
+				'errorConditionFormula' : 'Current_Serv_safe_certification__c = "Out of Compliance" && ISBLANK(CertsComments__c)',
+				'errorDisplayField' : 'CertsComments__c',
+				'errorMessage' : 'You must provide comments because the result was Out of Compliance'
+				},
+			'HEValidation18' : {
+				'fullName' : 'HEValidation18',
+				'errorConditionFormula' : 'PAR_production_waste_log_correct__c = "Out of Compliance" && ISBLANK(WasteLogComments__c)',
+				'errorDisplayField' : 'WasteLogComments__c',
+				'errorMessage' : 'You must provide comments because the result was Out of Compliance'
+				},
+			'HEValidation19' : {
+				'fullName' : 'HEValidation19',
+				'errorConditionFormula' : 'Food_service_guide_book_present__c = "Out of Compliance" && ISBLANK(GuideComments__c)',
+				'errorDisplayField' : 'GuideComments__c',
+				'errorMessage' : 'You must provide comments because the result was Out of Compliance'
+				},
+			'HEValidation20' : {
+				'fullName' : 'HEValidation20',
+				'errorConditionFormula' : 'Consumable_products_off_floor__c = "Out of Compliance" && ISBLANK(OffFloorComments__c)',
+				'errorDisplayField' : 'OffFloorComments__c',
+				'errorMessage' : 'You must provide comments because the result was Out of Compliance'
+				},
+			'HEValidation21' : {
+				'fullName' : 'HEValidation21',
+				'errorConditionFormula' : 'Chemical_containers_clearly_labeled__c = "Out of Compliance" && ISBLANK(ChemiContainersComments__c)',
+				'errorDisplayField' : 'ChemiContainersComments__c',
+				'errorMessage' : 'You must provide comments because the result was Out of Compliance'
+				},
+			'HEValidation22' : {
+				'fullName' : 'HEValidation22',
+				'errorConditionFormula' : 'Floors_floor_drains_clean__c = "Out of Compliance" && ISBLANK(DrainsComments__c)',
+				'errorDisplayField' : 'DrainsComments__c',
+				'errorMessage' : 'You must provide comments because the result was Out of Compliance'
+				},	
+			'HEValidation23' : {
+				'fullName' : 'HEValidation23',
+				'errorConditionFormula' : 'Check_inside_store__c = "Out of Compliance" && ISBLANK(InsideStoreComments__c)',
+				'errorDisplayField' : 'InsideStoreComments__c',
+				'errorMessage' : 'You must provide comments because the result was Out of Compliance'
+				},
+			'HEValidation24' : {
+				'fullName' : 'HEValidation24',
+				'errorConditionFormula' : 'No_holes_walls_and_ceiling__c = "Out of Compliance" && ISBLANK(HoleComments__c)',
+				'errorDisplayField' : 'HoleComments__c',
+				'errorMessage' : 'You must provide comments because the result was Out of Compliance'
+				},
+			'HEValidation25' : {
+				'fullName' : 'HEValidation25',
+				'errorConditionFormula' : 'Plumbing_properly_sealed_caulked__c = "Out of Compliance" && ISBLANK(PlumbingComments__c)',
+				'errorDisplayField' : 'PlumbingComments__c',
+				'errorMessage' : 'You must provide comments because the result was Out of Compliance'
+				},
+			'HEValidation26' : {
+				'fullName' : 'HEValidation26',
+				'errorConditionFormula' : 'Dumpster_lids_closedfree_of_litter__c = "Out of Compliance" && ISBLANK(DumpsterComments__c)',
+				'errorDisplayField' : 'DumpsterComments__c',
+				'errorMessage' : 'You must provide comments because the result was Out of Compliance'
+				},
+			'HEValidation27' : {
+				'fullName' : 'HEValidation27',
+				'errorConditionFormula' : 'Refrigerators_freezers_have_thermometer__c = "Out of Compliance" && ISBLANK(FridgeComments__c)',
+				'errorDisplayField' : 'FridgeComments__c',
+				'errorMessage' : 'You must provide comments because the result was Out of Compliance'
+				},
+			'HEValidation28' : {
+				'fullName' : 'HEValidation28',
+				'errorConditionFormula' : 'Walkin_cooler_is_clean__c = "Out of Compliance" && ISBLANK(CoolerComments__c)',
+				'errorDisplayField' : 'CoolerComments__c',
+				'errorMessage' : 'You must provide comments because the result was Out of Compliance'
+				}
+		},
+		'Image_Evaluation__c' : {
+			'IEValidation1' : {
+				'fullName' : 'IEValidation1',
+				'errorConditionFormula' : 'Air_Water_operational_area_clean__c = "No" && ISBLANK(AirWateroperationalareacleanComments__c)',
+				'errorDisplayField' : 'AirWateroperationalareacleanComments__c',
+				'errorMessage' : 'You must provide comments because the answer was No'
+				},
+			'IEValidation2' : {
+				'fullName' : 'IEValidation1',
+				'errorConditionFormula' : 'All_aisles_free_of_clutter__c = "No" && ISBLANK(AllaislesfreeofclutterComments__c)',
+				'errorDisplayField' : 'AllaislesfreeofclutterComments__c',
+				'errorMessage' : 'You must provide comments because the answer was No'
+				},
+			'IEValidation3' : {
+				'fullName' : 'IEValidation3',
+				'errorConditionFormula' : 'All_ID_and_price_signs_clean__c = "No" && ISBLANK(AllIDandpricesignscleanComments__c)',
+				'errorDisplayField' : 'AllIDandpricesignscleanComments__c',
+				'errorMessage' : 'You must provide comments because the answer was No'
+				},
+			'IEValidation4' : {
+				'fullName' : 'IEValidation4',
+				'errorConditionFormula' : 'All_interior_and_exterior_lights_clean__c = "No" && ISBLANK(AllinteriorandexteriorlightsComments__c)',
+				'errorDisplayField' : 'AllinteriorandexteriorlightsComments__c',
+				'errorMessage' : 'You must provide comments because the answer was No'
+				},
+			'IEValidation5' : {
+			'fullName' : 'IEValidation5',
+			'errorConditionFormula' : 'All_light_fixtures_working__c = "No" && ISBLANK(AlllightfixturesworkingComments__c)','errorDisplayField' : 'AlllightfixturesworkingComments__c','errorMessage' : 'You must provide comments because the answer was No'},
+			'IEValidation6' : {
+			'fullName' : 'IEValidation6',
+			'errorConditionFormula' : 'All_signage_perimeter_lights_working__c = "No" && ISBLANK(AllsignageperimeterlightsComments__c)','errorDisplayField' : 'AllsignageperimeterlightsComments__c','errorMessage' : 'You must provide comments because the answer was No'},
+			'IEValidation7' : {
+			'fullName' : 'IEValidation7',
+			'errorConditionFormula' : 'Approved_windshield_valets__c = "No" && ISBLANK(ApprovedwindshieldvaletsComments__c)','errorDisplayField' : 'ApprovedwindshieldvaletsComments__c','errorMessage' : 'You must provide comments because the answer was No'},
+			'IEValidation8' : {
+			'fullName' : 'IEValidation8',
+			'errorConditionFormula' : 'Bathrooms_clean__c = "No" && ISBLANK(BathroomscleanComments__c)','errorDisplayField' : 'BathroomscleanComments__c','errorMessage' : 'You must provide comments because the answer was No'},
+			'IEValidation9' : {
+			'fullName' : 'IEValidation9',
+			'errorConditionFormula' : 'Beverage_barrels_ice_cream_case_clean__c = "No" && ISBLANK(BeveragebarrelsicecreamcaseComments__c)','errorDisplayField' : 'BeveragebarrelsicecreamcaseComments__c','errorMessage' : 'You must provide comments because the answer was No'},
+			'IEValidation10' : {
+			'fullName' : 'IEValidation10',
+			'errorConditionFormula' : 'Bumper_poles_and_keypad_clean__c = "No" && ISBLANK(BumperpolesandkeypadcleanComments__c)','errorDisplayField' : 'BumperpolesandkeypadcleanComments__c','errorMessage' : 'You must provide comments because the answer was No'},
+			'IEValidation11' : {
+			'fullName' : 'IEValidation11',
+			'errorConditionFormula' : 'Bumper_poles_painted_and_rust_free__c = "No" && ISBLANK(BumperpolespaintedComments__c)','errorDisplayField' : 'BumperpolespaintedComments__c','errorMessage' : 'You must provide comments because the answer was No'},
+			'IEValidation12' : {
+			'fullName' : 'IEValidation12',
+			'errorConditionFormula' : 'Canopy_lights_operational__c = "No" && ISBLANK(CanopylightsoperationalComments__c)','errorDisplayField' : 'CanopylightsoperationalComments__c','errorMessage' : 'You must provide comments because the answer was No'},
+			'IEValidation13' : {
+			'fullName' : 'IEValidation13',
+			'errorConditionFormula' : 'Car_wash_clean__c = "No" && ISBLANK(CarwashcleanComments__c)','errorDisplayField' : 'CarwashcleanComments__c','errorMessage' : 'You must provide comments because the answer was No'},
+			'IEValidation14' : {
+			'fullName' : 'IEValidation14',
+			'errorConditionFormula' : 'Car_wash_operational__c = "No" && ISBLANK(CarwashoperationalComments__c)','errorDisplayField' : 'CarwashoperationalComments__c','errorMessage' : 'You must provide comments because the answer was No'},
+			'IEValidation15' : {
+			'fullName' : 'IEValidation15',
+			'errorConditionFormula' : 'Cigarette_racks_clean__c = "No" && ISBLANK(CigaretterackscleanComments__c)','errorDisplayField' : 'CigaretterackscleanComments__c','errorMessage' : 'You must provide comments because the answer was No'},
+			'IEValidation16' : {
+			'fullName' : 'IEValidation16',
+			'errorConditionFormula' : 'Coffee_and_fountain_area_equipment_clean__c = "No" && ISBLANK(CoffeeandfountainareaComments__c)','errorDisplayField' : 'CoffeeandfountainareaComments__c','errorMessage' : 'You must provide comments because the answer was No'},
+			'IEValidation17' : {
+			'fullName' : 'IEValidation17',
+			'errorConditionFormula' : 'Coolers_clean__c = "No" && ISBLANK(CoolerscleanComments__c)','errorDisplayField' : 'CoolerscleanComments__c','errorMessage' : 'You must provide comments because the answer was No'},
+			'IEValidation18' : {
+			'fullName' : 'IEValidation18',
+			'errorConditionFormula' : 'Counter_tops_clean__c = "No" && ISBLANK(CountertopscleanComments__c)','errorDisplayField' : 'CountertopscleanComments__c','errorMessage' : 'You must provide comments because the answer was No'},
+			'IEValidation19' : {
+			'fullName' : 'IEValidation19',
+			'errorConditionFormula' : 'Curbs_and_retaining_walls_maintained__c = "No" && ISBLANK(CurbsandretainingwallsComments__c)','errorDisplayField' : 'CurbsandretainingwallsComments__c','errorMessage' : 'You must provide comments because the answer was No'},
+			'IEValidation20' : {
+			'fullName' : 'IEValidation20',
+			'errorConditionFormula' : 'Dispensers_clean__c = "No" && ISBLANK(DispenserscleanComments__c)','errorDisplayField' : 'DispenserscleanComments__c','errorMessage' : 'You must provide comments because the answer was No'},
+			'IEValidation21' : {
+			'fullName' : 'IEValidation21',
+			'errorConditionFormula' : 'Dispensers_clean_and_stocked__c = "No" && ISBLANK(DispenserscleanandstockedComments__c)','errorDisplayField' : 'DispenserscleanandstockedComments__c','errorMessage' : 'You must provide comments because the answer was No'},
+			'IEValidation22' : {
+			'fullName' : 'IEValidation22',
+			'errorConditionFormula' : 'Doors_properly_decaled__c = "No" && ISBLANK(DoorsproperlydecaledComments__c)','errorDisplayField' : 'DoorsproperlydecaledComments__c','errorMessage' : 'You must provide comments because the answer was No'},
+			'IEValidation23' : {
+			'fullName' : 'IEValidation23',
+			'errorConditionFormula' : 'Doors_floors_walls_clean__c = "No" && ISBLANK(DoorsfloorswallscleanComments__c)','errorDisplayField' : 'DoorsfloorswallscleanComments__c','errorMessage' : 'You must provide comments because the answer was No'},
+			'IEValidation24' : {
+			'fullName' : 'IEValidation24',
+			'errorConditionFormula' : 'Employees_in_approved_clean_uniform__c = "No" && ISBLANK(EmployeesuniformComments__c)','errorDisplayField' : 'EmployeesuniformComments__c','errorMessage' : 'You must provide comments because the answer was No'},
+			'IEValidation25' : {
+			'fullName' : 'IEValidation25',
+			'errorConditionFormula' : 'Employees_parked_in_authorized_areas__c = "No" && ISBLANK(EmployeesparkedComments__c)','errorDisplayField' : 'EmployeesparkedComments__c','errorMessage' : 'You must provide comments because the answer was No'},
+			'IEValidation26' : {
+			'fullName' : 'IEValidation26',
+			'errorConditionFormula' : 'Floor_mats_clean__c = "No" && ISBLANK(FloormatscleanComments__c)','errorDisplayField' : 'FloormatscleanComments__c','errorMessage' : 'You must provide comments because the answer was No'},
+			'IEValidation27' : {
+			'fullName' : 'IEValidation27',
+			'errorConditionFormula' : 'Gondola_shelves_clean__c = "No" && ISBLANK(GondolashelvescleanComments__c)','errorDisplayField' : 'GondolashelvescleanComments__c','errorMessage' : 'You must provide comments because the answer was No'},
+			'IEValidation28' : {
+			'fullName' : 'IEValidation28',
+			'errorConditionFormula' : 'Interior_is_clean_dust_free__c = "No" && ISBLANK(InterioriscleandustfreeComments__c)','errorDisplayField' : 'InterioriscleandustfreeComments__c','errorMessage' : 'You must provide comments because the answer was No'},
+			'IEValidation29' : {
+			'fullName' : 'IEValidation29',
+			'errorConditionFormula' : 'Interior_signage_in_good_condition__c = "No" && ISBLANK(InteriorsignageComments__c)','errorDisplayField' : 'InteriorsignageComments__c','errorMessage' : 'You must provide comments because the answer was No'},
+			'IEValidation30' : {
+			'fullName' : 'IEValidation30',
+			'errorConditionFormula' : 'Landscape_area_maintained__c = "No" && ISBLANK(LandscapeareamaintainedComments__c)','errorDisplayField' : 'LandscapeareamaintainedComments__c','errorMessage' : 'You must provide comments because the answer was No'},
+			'IEValidation31' : {
+			'fullName' : 'IEValidation31',
+			'errorConditionFormula' : 'Lot_clean__c = "No" && ISBLANK(LotcleanComments__c)','errorDisplayField' : 'LotcleanComments__c','errorMessage' : 'You must provide comments because the answer was No'},
+			'IEValidation32' : {
+			'fullName' : 'IEValidation32',
+			'errorConditionFormula' : 'Microwave_interior_clean__c = "No" && ISBLANK(MicrowaveinteriorcleanComments__c)','errorDisplayField' : 'MicrowaveinteriorcleanComments__c','errorMessage' : 'You must provide comments because the answer was No'},
+			'IEValidation33' : {
+			'fullName' : 'IEValidation33',
+			'errorConditionFormula' : 'No_abandoned_or_for_sale_vehicles__c = "No" && ISBLANK(NoabandonedorforsalevehicleComments__c)','errorDisplayField' : 'NoabandonedorforsalevehicleComments__c','errorMessage' : 'You must provide comments because the answer was No'},
+			'IEValidation34' : {
+			'fullName' : 'IEValidation34',
+			'errorConditionFormula' : 'No_unauthorized_signs__c = "No" && ISBLANK(NounauthorizedsignsComments__c)','errorDisplayField' : 'NounauthorizedsignsComments__c','errorMessage' : 'You must provide comments because the answer was No'},
+			'IEValidation35' : {
+			'fullName' : 'IEValidation35',
+			'errorConditionFormula' : 'Nozzle_covers_and_splashguards_clean__c = "No" && ISBLANK(NozzlecoversandsplashguardsComments__c)','errorDisplayField' : 'NozzlecoversandsplashguardsComments__c','errorMessage' : 'You must provide comments because the answer was No'},
+			'IEValidation36' : {
+			'fullName' : 'IEValidation36',
+			'errorConditionFormula' : 'Paint_in_good_condition__c = "No" && ISBLANK(PaintingoodconditionComments__c)','errorDisplayField' : 'PaintingoodconditionComments__c','errorMessage' : 'You must provide comments because the answer was No'},
+			'IEValidation37' : {
+			'fullName' : 'IEValidation37',
+			'errorConditionFormula' : 'Paint_in_good_condition__c = "No" && ISBLANK(Paintingoodcondition2Comments__c)','errorDisplayField' : 'Paintingoodcondition2Comments__c','errorMessage' : 'You must provide comments because the answer was No'},
+			'IEValidation38' : {
+			'fullName' : 'IEValidation38',
+			'errorConditionFormula' : 'Pay_phones_clean__c = "No" && ISBLANK(PayphonescleanComments__c)','errorDisplayField' : 'PayphonescleanComments__c','errorMessage' : 'You must provide comments because the answer was No'},
+			'IEValidation39' : {
+			'fullName' : 'IEValidation39',
+			'errorConditionFormula' : 'POP_materials_clean__c = "No" && ISBLANK(POPmaterialscleanComments__c)','errorDisplayField' : 'POPmaterialscleanComments__c','errorMessage' : 'You must provide comments because the answer was No'},
+			'IEValidation40' : {
+			'fullName' : 'IEValidation40',
+			'errorConditionFormula' : 'Restrooms_free_of_unpleasant_odors__c = "No" && ISBLANK(RestroomsfreeComments__c)','errorDisplayField' : 'RestroomsfreeComments__c','errorMessage' : 'You must provide comments because the answer was No'},
+			'IEValidation41' : {
+			'fullName' : 'IEValidation41',
+			'errorConditionFormula' : 'Service_bay_clean__c = "No" && ISBLANK(ServicebaycleanComments__c)','errorDisplayField' : 'ServicebaycleanComments__c','errorMessage' : 'You must provide comments because the answer was No'},
+			'IEValidation42' : {
+			'fullName' : 'IEValidation42',
+			'errorConditionFormula' : 'Service_bays_neat_and_organized__c = "No" && ISBLANK(ServicebaysneatandorganizedComments__c)','errorDisplayField' : 'ServicebaysneatandorganizedComments__c','errorMessage' : 'You must provide comments because the answer was No'},
+			'IEValidation43' : {
+			'fullName' : 'IEValidation43',
+			'errorConditionFormula' : 'Sinks_free_of_dirt_countertops_clean__c = "No" && ISBLANK(SinksfreeofdirtcountertopsComments__c)','errorDisplayField' : 'SinksfreeofdirtcountertopsComments__c','errorMessage' : 'You must provide comments because the answer was No'},
+			'IEValidation44' : {
+			'fullName' : 'IEValidation44',
+			'errorConditionFormula' : 'Spanners_clean__c = "No" && ISBLANK(SpannerscleanComments__c)','errorDisplayField' : 'SpannerscleanComments__c','errorMessage' : 'You must provide comments because the answer was No'},
+			'IEValidation45' : {
+			'fullName' : 'IEValidation45',
+			'errorConditionFormula' : 'Trash_containers_clean_not_overflowing__c = "No" && ISBLANK(TrashcontainerscleanComments__c)','errorDisplayField' : 'TrashcontainerscleanComments__c','errorMessage' : 'You must provide comments because the answer was No'},
+			'IEValidation46' : {
+			'fullName' : 'IEValidation46',
+			'errorConditionFormula' : 'Trash_enclosure_clean__c = "No" && ISBLANK(TrashenclosurecleanComments__c)','errorDisplayField' : 'TrashenclosurecleanComments__c','errorMessage' : 'You must provide comments because the answer was No'},
+			'IEValidation47' : {
+			'fullName' : 'IEValidation47',
+			'errorConditionFormula' : 'Trash_valets_containers_clean__c = "No" && ISBLANK(TrashvaletscontainerscleanComments__c)','errorDisplayField' : 'TrashvaletscontainerscleanComments__c','errorMessage' : 'You must provide comments because the answer was No'},
+			'IEValidation48' : {
+			'fullName' : 'IEValidation48',
+			'errorConditionFormula' : 'Vacuum_operational_area_clean__c = "No" && ISBLANK(VacuumoperationalareacleanComments__c)','errorDisplayField' : 'VacuumoperationalareacleanComments__c','errorMessage' : 'You must provide comments because the answer was No'},
+			'IEValidation49' : {
+				'fullName' : 'IEValidation49',
+				'errorConditionFormula' : 'Windows_and_doors_clean__c = "No" && ISBLANK(WindowsanddoorscleanComments__c)',
+				'errorDisplayField' : 'WindowsanddoorscleanComments__c',
+				'errorMessage' : 'You must provide comments because the answer was No'
+				}
+		},
+		'Operations_Control_Review__c' : {
+			'OCRValidation1' : {'fullName' : 'OCRValidation1','errorConditionFormula' : 'FICL_completed_and_up_to_date__c = "Incorrect" && ISBLANK(FICLcompletedanduptodateComments__c)','errorDisplayField' : 'FICLcompletedanduptodateComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'OCRValidation2' : {'fullName' : 'OCRValidation2','errorConditionFormula' : 'UST_Monitoring_Log_completed__c = "Incorrect" && ISBLANK(USTMonitoringLogcompletedComments__c)','errorDisplayField' : 'USTMonitoringLogcompletedComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'OCRValidation3' : {'fullName' : 'OCRValidation3','errorConditionFormula' : 'Weekly_monthly_compliance_checklist_used__c = "Incorrect" && ISBLANK(WeeklymonthlycompliancechecklistComments__c)','errorDisplayField' : 'WeeklymonthlycompliancechecklistComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'OCRValidation4' : {'fullName' : 'OCRValidation4','errorConditionFormula' : 'Emergency_Contact_List_posted__c = "Incorrect" && ISBLANK(EmergencyContactListpostedComments__c)','errorDisplayField' : 'EmergencyContactListpostedComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'OCRValidation5' : {'fullName' : 'OCRValidation5','errorConditionFormula' : 'Backroom_storage__c = "Incorrect" && ISBLANK(BackroomstorageComments__c)','errorDisplayField' : 'BackroomstorageComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'OCRValidation6' : {'fullName' : 'OCRValidation6','errorConditionFormula' : 'Use_and_safe_disposal_of_gloves__c = "Incorrect" && ISBLANK(UseandsafedisposalofglovesComments__c)','errorDisplayField' : 'UseandsafedisposalofglovesComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'OCRValidation7' : {'fullName' : 'OCRValidation7','errorConditionFormula' : 'Compliance_Hotline_poster_posted__c = "Incorrect" && ISBLANK(ComplianceHotlineposterpostedComments__c)','errorDisplayField' : 'ComplianceHotlineposterpostedComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'OCRValidation8' : {'fullName' : 'OCRValidation8','errorConditionFormula' : 'Ladder_use_safety__c = "Incorrect" && ISBLANK(LadderusesafetyComments__c)','errorDisplayField' : 'LadderusesafetyComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'OCRValidation9' : {'fullName' : 'OCRValidation9','errorConditionFormula' : 'Maintenance_call_tracking__c = "Incorrect" && ISBLANK(MaintenancecalltrackingComments__c)','errorDisplayField' : 'MaintenancecalltrackingComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'OCRValidation10' : {'fullName' : 'OCRValidation10','errorConditionFormula' : 'Maintenance_contractor_sign_in_sheet__c = "Incorrect" && ISBLANK(MaintenancecontractorsigninsheetComments__c)','errorDisplayField' : 'MaintenancecontractorsigninsheetComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'OCRValidation11' : {'fullName' : 'OCRValidation11','errorConditionFormula' : 'MSDS_Binder_review__c = "Incorrect" && ISBLANK(MSDSBinderreviewComments__c)','errorDisplayField' : 'MSDSBinderreviewComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'OCRValidation12' : {'fullName' : 'OCRValidation12','errorConditionFormula' : 'Approved_Ecolab_products_in_use__c = "Incorrect" && ISBLANK(ApprovedEcolabproductsinuseComments__c)','errorDisplayField' : 'ApprovedEcolabproductsinuseComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'OCRValidation13' : {'fullName' : 'OCRValidation13','errorConditionFormula' : 'Security_Seals_procedures_followed__c = "Incorrect" && ISBLANK(SecuritySealsproceduresfollowedComments__c)','errorDisplayField' : 'SecuritySealsproceduresfollowedComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'OCRValidation14' : {'fullName' : 'OCRValidation14','errorConditionFormula' : 'Schedule_posted_in_BCE_format__c = "Incorrect" && ISBLANK(SchedulepostedinBCEformatComments__c)','errorDisplayField' : 'SchedulepostedinBCEformatComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'OCRValidation15' : {'fullName' : 'OCRValidation15','errorConditionFormula' : 'Site_EOD_up_to_date_within_2_days__c = "Incorrect" && ISBLANK(SiteEODuptodatewithin2daysComments__c)','errorDisplayField' : 'SiteEODuptodatewithin2daysComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'OCRValidation16' : {'fullName' : 'OCRValidation16','errorConditionFormula' : 'BCE_QB_review_see_separate_document__c = "Incorrect" && ISBLANK(BCEQBreviewseeseparatedocumentComments__c)','errorDisplayField' : 'BCEQBreviewseeseparatedocumentComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'OCRValidation17' : {'fullName' : 'OCRValidation17','errorConditionFormula' : 'Robbery_Deterrence_tape_available__c = "Incorrect" && ISBLANK(RobberyDeterrencetapeavailableComments__c)','errorDisplayField' : 'RobberyDeterrencetapeavailableComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'OCRValidation18' : {'fullName' : 'OCRValidation18','errorConditionFormula' : 'Employee_files_secured__c = "Incorrect" && ISBLANK(EmployeefilessecuredComments__c)','errorDisplayField' : 'EmployeefilessecuredComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'OCRValidation19' : {'fullName' : 'OCRValidation19','errorConditionFormula' : 'Shredder_owned_and_used__c = "Incorrect" && ISBLANK(ShredderownedandusedComments__c)','errorDisplayField' : 'ShredderownedandusedComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'OCRValidation20' : {'fullName' : 'OCRValidation20','errorConditionFormula' : 'One_shift_of_CCTV_video_reviewed_weekly__c = "Incorrect" && ISBLANK(OneshiftofCCTVvideoreviewedComments__c)','errorDisplayField' : 'OneshiftofCCTVvideoreviewedComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'OCRValidation21' : {'fullName' : 'OCRValidation21','errorConditionFormula' : 'Interface_setup_for_CCTV_and_Nucleus__c = "Incorrect" && ISBLANK(InterfacesetupforCCTVandNucleusComments__c)','errorDisplayField' : 'InterfacesetupforCCTVandNucleusComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'OCRValidation22' : {'fullName' : 'OCRValidation22','errorConditionFormula' : 'CCTV_camera_placement_in_compliance__c = "Incorrect" && ISBLANK(CCTVcameraplacementincomplianceComments__c)','errorDisplayField' : 'CCTVcameraplacementincomplianceComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'
+			}
+},
+
+		'Merchandising_Check__c' : {
+			'MCValidation1' : {'fullName' : 'MCValidation1','errorConditionFormula' : 'Availability_amount_of_product__c = "Out of Compliance" && ISBLANK(AvailabilityamountofproductComments__c)','errorDisplayField' : 'AvailabilityamountofproductComments__c','errorMessage' : 'You must provide comments because the answer was Out of Compliance'},
+			'MCValidation2' : {'fullName' : 'MCValidation2','errorConditionFormula' : 'Check_temperature_timer_usage__c = "Out of Compliance" && ISBLANK(ChecktemperaturetimerusageComments__c)','errorDisplayField' : 'ChecktemperaturetimerusageComments__c','errorMessage' : 'You must provide comments because the answer was Out of Compliance'},
+			'MCValidation3' : {'fullName' : 'MCValidation3','errorConditionFormula' : 'Cigar_Moist_Top_sellers__c = "Out of Compliance" && ISBLANK(CigarMoistTopsellersComments__c)','errorDisplayField' : 'CigarMoistTopsellersComments__c','errorMessage' : 'You must provide comments because the answer was Out of Compliance'},
+			'MCValidation4' : {'fullName' : 'MCValidation4','errorConditionFormula' : 'Cigarette_Top_Sellers_Check__c = "Out of Compliance" && ISBLANK(CigaretteTopSellersCheckComments__c)','errorDisplayField' : 'CigaretteTopSellersCheckComments__c','errorMessage' : 'You must provide comments because the answer was Out of Compliance'},
+			'MCValidation5' : {'fullName' : 'MCValidation5','errorConditionFormula' : 'Clean_all_lights_operational__c = "Out of Compliance" && ISBLANK(CleanalllightsoperationalComments__c)','errorDisplayField' : 'CleanalllightsoperationalComments__c','errorMessage' : 'You must provide comments because the answer was Out of Compliance'},
+			'MCValidation6' : {'fullName' : 'MCValidation6','errorConditionFormula' : 'Condiment_availability__c = "Out of Compliance" && ISBLANK(CondimentavailabilityComments__c)','errorDisplayField' : 'CondimentavailabilityComments__c','errorMessage' : 'You must provide comments because the answer was Out of Compliance'},
+			'MCValidation7' : {'fullName' : 'MCValidation7','errorConditionFormula' : 'Confectionary_as_per_POG__c = "Out of Compliance" && ISBLANK(ConfectionaryasperPOGComments__c)','errorDisplayField' : 'ConfectionaryasperPOGComments__c','errorMessage' : 'You must provide comments because the answer was Out of Compliance'},
+			'MCValidation8' : {'fullName' : 'MCValidation8','errorConditionFormula' : 'Cooler_Planogram_Check__c = "Out of Compliance" && ISBLANK(CoolerPlanogramCheckComments__c)','errorDisplayField' : 'CoolerPlanogramCheckComments__c','errorMessage' : 'You must provide comments because the answer was Out of Compliance'},
+			'MCValidation9' : {'fullName' : 'MCValidation9','errorConditionFormula' : 'FCB_Planogram_Check__c = "Out of Compliance" && ISBLANK(FCBPlanogramCheckComments__c)','errorDisplayField' : 'FCBPlanogramCheckComments__c','errorMessage' : 'You must provide comments because the answer was Out of Compliance'},
+			'MCValidation10' : {'fullName' : 'MCValidation10','errorConditionFormula' : 'Freshness_expiry_date_check__c = "Out of Compliance" && ISBLANK(FreshnessexpirydatecheckComments__c)','errorDisplayField' : 'FreshnessexpirydatecheckComments__c','errorMessage' : 'You must provide comments because the answer was Out of Compliance'},
+			'MCValidation11' : {'fullName' : 'MCValidation11','errorConditionFormula' : 'Front_counter__c = "Out of Compliance" && ISBLANK(FrontcounterComments__c)','errorDisplayField' : 'FrontcounterComments__c','errorMessage' : 'You must provide comments because the answer was Out of Compliance'},
+			'MCValidation12' : {'fullName' : 'MCValidation12','errorConditionFormula' : 'Fronted_faced__c = "Out of Compliance" && ISBLANK(FrontedfacedComments__c)','errorDisplayField' : 'FrontedfacedComments__c','errorMessage' : 'You must provide comments because the answer was Out of Compliance'},
+			'MCValidation13' : {'fullName' : 'MCValidation13','errorConditionFormula' : 'Full__c = "Out of Compliance" && ISBLANK(FullComments__c)','errorDisplayField' : 'FullComments__c','errorMessage' : 'You must provide comments because the answer was Out of Compliance'},
+			'MCValidation14' : {'fullName' : 'MCValidation14','errorConditionFormula' : 'Planogram__c = "Out of Compliance" && ISBLANK(PlanogramComments__c)','errorDisplayField' : 'PlanogramComments__c','errorMessage' : 'You must provide comments because the answer was Out of Compliance'},
+			'MCValidation15' : {'fullName' : 'MCValidation15','errorConditionFormula' : 'Planogram_blend_availability__c = "Out of Compliance" && ISBLANK(PlanogramblendavailabilityComments__c)','errorDisplayField' : 'PlanogramblendavailabilityComments__c','errorMessage' : 'You must provide comments because the answer was Out of Compliance'},
+			'MCValidation16' : {'fullName' : 'MCValidation16','errorConditionFormula' : 'Review_Retails_in_BCE__c = "Out of Compliance" && ISBLANK(ReviewRetailsinBCEComments__c)','errorDisplayField' : 'ReviewRetailsinBCEComments__c','errorMessage' : 'You must provide comments because the answer was Out of Compliance'},
+			'MCValidation17' : {'fullName' : 'MCValidation17','errorConditionFormula' : 'SEL_in_place_and_match_product__c = "Out of Compliance" && ISBLANK(SELinplaceandmatchproductComments__c)','errorDisplayField' : 'SELinplaceandmatchproductComments__c','errorMessage' : 'You must provide comments because the answer was Out of Compliance'
+			}
+
+		},
+		'Food_Safety_Review_TP__c' : {
+			'TPValidation1' : {'fullName' : 'TPValidation1','errorConditionFormula' : 'Hanging_thermometers__c = "Incorrect" && ISBLANK(HangingThermometerComments__c)','errorDisplayField' : 'HangingThermometerComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'TPValidation2' : {'fullName' : 'TPValidation2','errorConditionFormula' : 'Thermometers_correct_temperature_range__c = "Incorrect" && ISBLANK(CorrectTempRangeComments__c)','errorDisplayField' : 'CorrectTempRangeComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'TPValidation3' : {'fullName' : 'TPValidation3','errorConditionFormula' : 'Temperature_logs_completed_daily__c = "Incorrect" && ISBLANK(TempLogsComments__c)','errorDisplayField' : 'TempLogsComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'TPValidation4' : {'fullName' : 'TPValidation4','errorConditionFormula' : 'Hand_washing_sinks_are_clean__c = "Incorrect" && ISBLANK(SinksComments__c)','errorDisplayField' : 'SinksComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'TPValidation5' : {'fullName' : 'TPValidation5','errorConditionFormula' : 'All_cleaning_chemicals_properly_labeled__c = "Incorrect" && ISBLANK(CleaningChemicalsComments__c)','errorDisplayField' : 'CleaningChemicalsComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'TPValidation6' : {'fullName' : 'TPValidation6','errorConditionFormula' : 'All_consumables_have_expiration_date__c = "Incorrect" && ISBLANK(ConsumablesComments__c)','errorDisplayField' : 'ConsumablesComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'TPValidation7' : {'fullName' : 'TPValidation7','errorConditionFormula' : 'No_sponges_used_for_dishwashing__c = "Incorrect" && ISBLANK(SpongesComments__c)','errorDisplayField' : 'SpongesComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'TPValidation8' : {'fullName' : 'TPValidation8','errorConditionFormula' : 'Mop_Area_sink_is_clean_and_organized__c = "Incorrect" && ISBLANK(MopAreaSinkComments__c)','errorDisplayField' : 'MopAreaSinkComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'TPValidation9' : {'fullName' : 'TPValidation9','errorConditionFormula' : 'Cool_zone_area_floor_clean__c = "Incorrect" && ISBLANK(CoolZoneComments__c)','errorDisplayField' : 'CoolZoneComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'TPValidation10' : {'fullName' : 'TPValidation10','errorConditionFormula' : 'Coffee_area_clean__c = "Incorrect" && ISBLANK(CoffeeAreaCleanComments__c)','errorDisplayField' : 'CoffeeAreaCleanComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'
+			}
+		},
+		'Food_Safety_Review_QSR__c' : {
+			'QSRValidation1' : {'fullName' : 'QSRValidation1','errorConditionFormula' : 'All_chemicals_are_approved__c = "Incorrect" && ISBLANK(ChemicalsLabeledComments__c)','errorDisplayField' : 'ChemicalsLabeledComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'QSRValidation2' : {'fullName' : 'QSRValidation2','errorConditionFormula' : 'Bio_thermometers_are_calibrated__c = "Incorrect" && ISBLANK(BioThermometerComments__c)','errorDisplayField' : 'BioThermometerComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'QSRValidation3' : {'fullName' : 'QSRValidation3','errorConditionFormula' : 'Employees_wearing_clean_uniforms__c = "Incorrect" && ISBLANK(CleanUniformsComments__c)','errorDisplayField' : 'CleanUniformsComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'QSRValidation4' : {'fullName' : 'QSRValidation4','errorConditionFormula' : 'Fans_and_unit_hook_ups_are_clean__c = "Incorrect" && ISBLANK(FansComments__c)','errorDisplayField' : 'FansComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'QSRValidation5' : {'fullName' : 'QSRValidation5','errorConditionFormula' : 'FIFO_procedures_are_being_used__c = "Incorrect" && ISBLANK(FIFOComments__c)','errorDisplayField' : 'FIFOComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'QSRValidation6' : {'fullName' : 'QSRValidation6','errorConditionFormula' : 'Floor_drains_are_clean__c = "Incorrect" && ISBLANK(FloorDrainsComments__c)','errorDisplayField' : 'FloorDrainsComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'QSRValidation7' : {'fullName' : 'QSRValidation7','errorConditionFormula' : 'Food_goods_stored_correctly__c = "Incorrect" && ISBLANK(FoodGoodsStoredComments__c)','errorDisplayField' : 'FoodGoodsStoredComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'QSRValidation8' : {'fullName' : 'QSRValidation8','errorConditionFormula' : 'Fountain_and_coffee_equipment_is_clean__c = "Incorrect" && ISBLANK(FountainComments__c)','errorDisplayField' : 'FountainComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'QSRValidation9' : {'fullName' : 'QSRValidation9','errorConditionFormula' : 'Hand_washing_sinks_are_clean__c = "Incorrect" && ISBLANK(SinksComments__c)','errorDisplayField' : 'SinksComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'QSRValidation10' : {'fullName' : 'QSRValidation10','errorConditionFormula' : 'Health_Permit_current_and_posted__c = "Incorrect" && ISBLANK(HealthPermitComments__c)','errorDisplayField' : 'HealthPermitComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'QSRValidation11' : {'fullName' : 'QSRValidation11','errorConditionFormula' : 'Heated_food_products_temperatures__c = "Incorrect" && ISBLANK(HeatedFoodComments__c)','errorDisplayField' : 'HeatedFoodComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'QSRValidation12' : {'fullName' : 'QSRValidation12','errorConditionFormula' : 'Manager_Walk_records_completed__c = "Incorrect" && ISBLANK(ManagerWalkComments__c)','errorDisplayField' : 'ManagerWalkComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'QSRValidation13' : {'fullName' : 'QSRValidation13','errorConditionFormula' : 'Mops_and_buckets_differentiated__c = "Incorrect" && ISBLANK(MopsComments__c)','errorDisplayField' : 'MopsComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'QSRValidation14' : {'fullName' : 'QSRValidation14','errorConditionFormula' : 'No_sponges_are_used_for_dishwashing__c = "Incorrect" && ISBLANK(SpongesComments__c)','errorDisplayField' : 'SpongesComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'QSRValidation15' : {'fullName' : 'QSRValidation15','errorConditionFormula' : 'Par_production_waste_logs_used_daily__c = "Incorrect" && ISBLANK(ParProductionComments__c)','errorDisplayField' : 'ParProductionComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'QSRValidation16' : {'fullName' : 'QSRValidation16','errorConditionFormula' : 'Prep_table_shelves_and_table_legs_clean__c = "Incorrect" && ISBLANK(PrepTableComments__c)','errorDisplayField' : 'PrepTableComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'QSRValidation17' : {'fullName' : 'QSRValidation17','errorConditionFormula' : 'Products_prepped_in_walk_in_cooler__c = "Incorrect" && ISBLANK(ProductsPreppedComments__c)','errorDisplayField' : 'ProductsPreppedComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'QSRValidation18' : {'fullName' : 'QSRValidation18','errorConditionFormula' : 'Products_stored_in_walk_in_cooler__c = "Incorrect" && ISBLANK(ProductsStoredComments__c)','errorDisplayField' : 'ProductsStoredComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'QSRValidation19' : {'fullName' : 'QSRValidation19','errorConditionFormula' : 'Temperature_logs_completed__c = "Incorrect" && ISBLANK(TemperatureLogsComments__c)','errorDisplayField' : 'TemperatureLogsComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'QSRValidation20' : {'fullName' : 'QSRValidation20','errorConditionFormula' : 'Three_compartment_sink_is_correct__c = "Incorrect" && ISBLANK(ThreeCompartmentSinkComments__c)','errorDisplayField' : 'ThreeCompartmentSinkComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'QSRValidation21' : {'fullName' : 'QSRValidation21','errorConditionFormula' : 'Triple_O_s_Burger_Evaluation_completed__c = "Incorrect" && ISBLANK(BurgerEvaluationComments__c)','errorDisplayField' : 'BurgerEvaluationComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'},
+			'QSRValidation22' : {'fullName' : 'QSRValidation22','errorConditionFormula' : 'Utensils_clean__c = "Incorrect" && ISBLANK(UtensilsComments__c)','errorDisplayField' : 'UtensilsComments__c','errorMessage' : 'You must provide comments because the answer was Incorrect'
+			}
+		}
+		}
+}
