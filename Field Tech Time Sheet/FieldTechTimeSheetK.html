@@ -547,60 +547,46 @@
 
                     </tbody></table>
                 </div>
+<table>
+  <tr>
+    <th>Question</br>Number</th>
+    <th>Question</th>
+  </tr>
+  <tr>
+    <td class="auto-style40">1</td> 
+    <td class="auto-style39">If NO, have customer sign JZ T&amp;C's prior to the start of ANY work. If YES, what type?</td>
+  </tr>
+   <tr>
+    <td class="auto-style40">2</td>
+    <td class="auto-style39">Area Safety Council and/or Client Specific Training is complete.</td> 
+  <tr>
+  <tr>
+    <td class="auto-style40">3</td>
+    <td class="auto-style39">Personal Protective Equipment and Respiratory Protection is available and in good condition.</td> 
+    </tr>
+    <tr>
+    <td class="auto-style40">4</td>
+    <td class="auto-style39">Verbally confirmed problems/condition of equipment to gain a better understanding of the operational problems.</td> 
+    </tr>
+    <tr>
+    <td class="auto-style40">5</td>
+    <td class="auto-style39">Observed the work area visually before entering for safety issues.</td> 
+    </tr>
+    <tr>
+    <td class="auto-style40">6</td>
+    <td class="auto-style39">To the best of your ability, assured that the worksite is Asbestos Free.</td> 
+    </tr>
+    <tr>
+    <td class="auto-style40">7</td>
+    <td class="auto-style39">Confirm that Work Permits, Lockout/Tagout Procedures, Confined Space Permits, Hot Work Permits(as applicable) are complete.</td> 
+    </tr>
 
-		&nbsp;
-			<table>
+</table>
 		
-			<tbody><tr>
 			
-				<td class="auto-style40">&nbsp;&nbsp;&nbsp;1. Are T&amp;C's in place? <b>{{TI_I_1__c}}</b></td> 
-				<td class="auto-style39">If NO, have customer sign JZ T&amp;C's prior to the start of ANY work. If YES, what type?</td>
 			
-			</tr>
-			
-			<tr>
-			
-				<td class="auto-style40">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Technical Asst Agmt <b>{{TI_I_2__c}}</b></td></tr>
-			
-			<tr>
-			
-				<td colspan="4" class="auto-style40">&nbsp;&nbsp;&nbsp;2. Area Safety Council and/or Client Specific Training is complete.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>{{TI_I_2__c}}</b></td>
-			
-			</tr>
-			
-			<tr>
-			
-				<td colspan="4" class="auto-style40">&nbsp;&nbsp;&nbsp;3. Personal Protective Equipment and Respiratory Protection is available and in good condition.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>{{TI_I_3__c}}</b></td>
-			
-			</tr>
-			
-			<tr>
-			
-				<td colspan="4" class="auto-style40">&nbsp;&nbsp;&nbsp;4. Verbally confirmed problems/condition of equipment to gain a better understanding of the operational problems.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>{{TI_I_4__c}}</b></td>
-			
-			</tr>
-			
-			<tr>
-			
-				<td colspan="4" class="auto-style40">&nbsp;&nbsp;&nbsp;5. Observed the work area visually before entering for safety issues.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>{{TI_I_5__c}}</b></td>
-			
-			</tr>
-			
-			<tr>
-			
-				<td colspan="4" class="auto-style40">&nbsp;&nbsp;&nbsp;6. To the best of your ability, assured that the worksite is Asbestos Free.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>{{TI_I_6__c}}</b></td>
-			
-			</tr>
-			
-			<tr>
-			
-				<td colspan="4" class="auto-style40">&nbsp;&nbsp;&nbsp;7. Confirm that Work Permits, Lockout/Tagout Procedures, Confined Space Permits, Hot Work Permits(as applicable) are complete.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>{{TI_I_7__c}}</b></td>
-			
-			</tr>
 
-			<tr>
-			
-				<td colspan="4" class="auto-style40">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>{{TI_I_7_1__c}}</b></td>
+
 			
 <!--LABOR / TIME ITEMS-->
 
@@ -677,7 +663,7 @@
 
 
 <!--PAGE BREAK-->
-<div style="page-break-after:always"></div>
+<!--<div style="page-break-after:always"></div>-->
 <!--TABLE FORMATING - SECTION 1-->
 <TD>
 <TABLE BORDER="3" CELLPADDING="3" CELLSPACING="3">
@@ -691,7 +677,7 @@
 			<th colspan="2" style="text-align:left">Trip Expense</th>
 			</tr>
         <th style="height:30px;width:100px;float:left;" class="auto-style33">Expense Type</th>
-        <th style="height:30px;width:75px;float:left;" class="auto-style33">Expense Amount</th>		
+        <th style="height:30px;width:85px;float:left;" class="auto-style33">Expense Amount</th>		
       </tr>
     </thead>
     <tbody>
@@ -724,22 +710,22 @@
 
 {{/each}}
   <tr>
-    <th style="height:40px;width:100px;float:left;" class="auto-style97">Number of Miles: {{sum items "FX5__Input_Qty__c"}}</th>
-    <th style="height:40px;width:85px;float:left;" class="auto-style97">Price per Mile: $1.50</th>
+    <th style="height:15px;width:100px;float:left;" class="auto-style97">Number of Miles: {{sum items "FX5__Input_Qty__c"}}</th>
+    <th style="height:15px;width:85px;float:left;" class="auto-style97">Price per Mile: $1.50</th>
 
   </tr>
 {{/group}}
   <tr>
- <th style="height:30px;width:100px;float:left;" class="auto-style97">Mileage Total:</th>
- <th style="height:30px;width:85px;float:left;" class="auto-style97">${{sum items "Extended_Amount__c"}}</th>
+ <th style="height:20px;width:100px;float:left;" class="auto-style97">Mileage Total:</th>
+ <th style="height:15px;width:85px;float:left;" class="auto-style97">${{sum items "Extended_Amount__c"}}</th>
 
   </tr>
 {{/filter}}
 
 {{#filter FX5__Ticket_Items__r "RecordType.DeveloperName" is="BillableExpense"}}
   <tr>
- <th style="height:30px;width:100px;float:left;" class="auto-style97">Markup Total:</th>
- <th style="height:30px;width:85px;float:left;" class="auto-style97">${{sum items "Markup__c"}}</th>
+ <th style="height:20px;width:100px;float:left;" class="auto-style97">Markup Total:</th>
+ <th style="height:15px;width:85px;float:left;" class="auto-style97">${{sum items "Markup__c"}}</th>
 
   </tr>
 {{/filter}}
