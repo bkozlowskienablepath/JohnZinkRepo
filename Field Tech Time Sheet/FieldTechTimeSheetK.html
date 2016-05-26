@@ -545,39 +545,48 @@
 
                             </tr>
 
-                    </tbody></table>
+                    </tbody>
+                    </table>
                 </div>
 <table>
   <tr>
     <th>Question</br>Number</th>
+    <th></th>
     <th>Question</th>
   </tr>
   <tr>
     <td class="auto-style40">1</td> 
+    <td>{{TI_I_1__c}}</td>
     <td class="auto-style39">If NO, have customer sign JZ T&amp;C's prior to the start of ANY work. If YES, what type?</td>
   </tr>
    <tr>
     <td class="auto-style40">2</td>
+    <td>{{TI_I_2__c}}</td>
     <td class="auto-style39">Area Safety Council and/or Client Specific Training is complete.</td> 
   <tr>
   <tr>
     <td class="auto-style40">3</td>
+    <td>{{TI_I_3__c}}</td>
     <td class="auto-style39">Personal Protective Equipment and Respiratory Protection is available and in good condition.</td> 
     </tr>
     <tr>
     <td class="auto-style40">4</td>
+    <td>{{TI_I_4__c}}</td>
     <td class="auto-style39">Verbally confirmed problems/condition of equipment to gain a better understanding of the operational problems.</td> 
     </tr>
     <tr>
     <td class="auto-style40">5</td>
+    <td>{{TI_I_5__c}}</td>
     <td class="auto-style39">Observed the work area visually before entering for safety issues.</td> 
     </tr>
     <tr>
     <td class="auto-style40">6</td>
+    <td>{{TI_I_6__c}}</td>
     <td class="auto-style39">To the best of your ability, assured that the worksite is Asbestos Free.</td> 
     </tr>
     <tr>
     <td class="auto-style40">7</td>
+    <td>{{TI_I_7__c}}</td>
     <td class="auto-style39">Confirm that Work Permits, Lockout/Tagout Procedures, Confined Space Permits, Hot Work Permits(as applicable) are complete.</td> 
     </tr>
 
@@ -710,14 +719,14 @@
 
 {{/each}}
   <tr>
-    <th style="height:15px;width:100px;float:left;" class="auto-style97">Number of Miles: {{sum items "FX5__Input_Qty__c"}}</th>
-    <th style="height:15px;width:85px;float:left;" class="auto-style97">Price per Mile: $1.50</th>
+    <th style="height:25px;width:100px;float:left;" class="auto-style97">Number of Miles: {{sum items "FX5__Input_Qty__c"}}</th>
+    <th style="height:25px;width:85px;float:left;" class="auto-style97">Price per Mile: $1.50</th>
 
   </tr>
 {{/group}}
   <tr>
  <th style="height:20px;width:100px;float:left;" class="auto-style97">Mileage Total:</th>
- <th style="height:15px;width:85px;float:left;" class="auto-style97">${{sum items "Extended_Amount__c"}}</th>
+ <th style="height:20px;width:85px;float:left;" class="auto-style97">${{sum items "Extended_Amount__c"}}</th>
 
   </tr>
 {{/filter}}
@@ -725,7 +734,7 @@
 {{#filter FX5__Ticket_Items__r "RecordType.DeveloperName" is="BillableExpense"}}
   <tr>
  <th style="height:20px;width:100px;float:left;" class="auto-style97">Markup Total:</th>
- <th style="height:15px;width:85px;float:left;" class="auto-style97">${{sum items "Markup__c"}}</th>
+ <th style="height:20px;width:85px;float:left;" class="auto-style97">${{sum items "Markup__c"}}</th>
 
   </tr>
 {{/filter}}
@@ -750,17 +759,18 @@
 
 
 
-{{#filter FX5__Ticket_Items__r "RecordType.DeveloperName" is="BillableExpense"}}
-{{#group items "Expense_Type_Formula__c"}}
+{{#filter FX5__Ticket_Items__r "RecordType.DeveloperName" is="Equipment"}}
+
 {{#each items}}
 
-{{/each}}
+
   <tr>
-    <th style="height:15px;width:75px;float:left;" class="auto-style97"></th>
+    <th style="height:15px;width:75px;float:left;" class="auto-style97">{{FX5__Description__c}}</th>
     <th style="height:15px;width:50px;float:left;" class="auto-style97">${{"Extended_Amount__c"}}</th>
 
   </tr>
-{{/group}}
+  {{/each}}
+
   <tr>
    <th style="height:15px;width:75px;float:left;" class="auto-style97">Sub Total:</th>
  <th style="height:15px;width:50px;float:left;" class="auto-style97">${{sum items "Extended_Amount__c"}}</th>
@@ -792,13 +802,13 @@
 {{#group items "Time_Type__c"}}
 {{#each items}}
   {{/each}}
-{{#sort items "Time_Type__c" desc=true}}
+
   <tr>
     <th style="height:15px;width:75px;float:left;" class="auto-style97">${{sum items "Extended_Amount__c"}}</th>
     <th style="height:15px;width:110px;float:left;" class="auto-style97">{{Time_Type__c}}</th>
 
   </tr>
-{{/sort}}
+
 {{/group}}
   <tr>
 
