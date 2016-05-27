@@ -569,38 +569,43 @@
   </tr>
   <tr>
     <td class="auto-style40">1</td> 
-    <td>{{TI_I_1__c}}</br>{{TI_I_1__c}}</td>
-    <td class="auto-style39">If NO, have customer sign JZ T&amp;C's prior to the start of ANY work. </br>If YES, what type?</td>
+    <td {{#if TI_I_1__c "==" "Yes"}} class="auto-style38" {{else}} class="auto-style36" {{/if}} ></td>
+    <td class="auto-style39">If NO, have customer sign JZ T&amp;C's prior to the start of ANY work. </br>If YES, what type?: {{TI_I_1_1_c__c}}</td>
   </tr>
    <tr>
     <td class="auto-style40">2</td>
-    <td {{#if TI_I_2__c "==" "Yes"}} class="auto-style38"> {{else}} class="auto-style36"> {{/if}}</td>
+    <td {{#if TI_I_2__c "==" "Yes"}} class="auto-style38" {{else}} class="auto-style36" {{/if}} ></td>
     <td class="auto-style39">Area Safety Council and/or Client Specific Training is complete.</td> 
   <tr>
   <tr>
     <td class="auto-style40">3</td>
-    <td>{{TI_I_3__c}}</td>
+    <td {{#if TI_I_3__c "==" "Yes"}} class="auto-style38" {{else}} class="auto-style36" {{/if}} ></td>
     <td class="auto-style39">Personal Protective Equipment and Respiratory Protection is available and in good condition.</td> 
     </tr>
     <tr>
     <td class="auto-style40">4</td>
-    <td>{{TI_I_4__c}}</td>
+    <td {{#if TI_I_4__c "==" "Yes"}} class="auto-style38" {{else}} class="auto-style36" {{/if}} ></td>
     <td class="auto-style39">Verbally confirmed problems/condition of equipment to gain a better understanding of the operational problems.</td> 
     </tr>
     <tr>
     <td class="auto-style40">5</td>
-    <td>{{TI_I_5__c}}</td>
+    <td {{#if TI_I_5__c "==" "Yes"}} class="auto-style38" {{else}} class="auto-style36" {{/if}} ></td>
     <td class="auto-style39">Observed the work area visually before entering for safety issues.</td> 
     </tr>
     <tr>
     <td class="auto-style40">6</td>
-    <td>{{TI_I_6__c}}</td>
+    <td {{#if TI_I_6__c "==" "Yes"}} class="auto-style38" {{else}} class="auto-style36" {{/if}} ></td>
     <td class="auto-style39">To the best of your ability, assured that the worksite is Asbestos Free.</td> 
     </tr>
     <tr>
     <td class="auto-style40">7</td>
-    <td>{{TI_I_7__c}}</br>{{TI_I_1__c}}</td>
-    <td class="auto-style39">Confirm that Work Permits, Lockout/Tagout Procedures, Confined Space Permits, Hot Work Permits(as applicable) are complete.</br>BLAH</td> 
+    <td {{#if TI_I_7__c "==" "Yes"}} class="auto-style38" {{else}} class="auto-style36" {{/if}} ></td>
+    <td class="auto-style39">Confirm that Work Permits, Lockout/Tagout Procedures, Confined Space Permits, Hot Work Permits(as applicable) are complete.</td> 
+    </tr>
+    <tr>
+    <td class="auto-style40"></td>
+    <td></td>
+    <td class="auto-style39">Service Call Type: {{TI_I_7_1__c}}</td> 
     </tr>
 
 </table>
