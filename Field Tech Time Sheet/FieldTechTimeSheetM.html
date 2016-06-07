@@ -317,6 +317,12 @@
 	border: 1px solid #000000;
 }
 
+.auto-style96 {
+	border: 1px solid #000000;
+	font-size: x-small;
+	justify-content: right
+}
+
 .auto-style97 {
 	border: 1px solid #000000;
 	font-size: x-small;
@@ -673,7 +679,7 @@
 
 {{/each}}
   <tr>
-   		<th style="height:30px;width:274px;float:left;" class="auto-style97">Sub-Total Hours</th>
+   		<th style="height:30px;width:274px;float:left;" class="auto-style96">Sub-Total Hours</th>
         <th style="height:30px;width:40px;float:left;" class="auto-style97">{{sum items "Time_Regular__c" precision="2" separator="," decimal="."}}</th>
         <th style="height:30px;width:40px;float:left;" class="auto-style97">{{sum items "Time_Regular_OT__c" precision="2" separator="," decimal="."}}</th>		
         <th style="height:30px;width:40px;float:left;" class="auto-style97">{{sum items "Time_Weekend__c" precision="2" separator="," decimal="."}}</th>
