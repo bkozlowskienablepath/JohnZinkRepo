@@ -360,7 +360,7 @@ window.i18n = {
 	"Console_Name":"Name",
 	"Console_Description":"Description",
 	"Console_Classification":"Classification",
-	"Console_UOM":"UOM",
+	"Console_UOM":"UoM",
 	"Console_SequenceNumber":"Seq #",
 	"Console_paginatorPrevious":"Previous",
 	"Console_paginatorNext":"Next",
